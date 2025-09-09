@@ -1,10 +1,17 @@
 title: "Dillon Bowes"
 author: "Dillon Bowes"
-description: "Portfolio | Resume | Blog"
-
-remote_theme: pages-themes/cayman@v0.2.0
+description: "Portfolio and Blog"
+remote_theme: pages-themes/slate@v0.2.0
 plugins:
   - jekyll-remote-theme
 
-# Enable dark mode styling
-color_scheme: dark
+# Navigation bar
+nav:
+  - name: "Home"
+    link: /
+  - name: "Projects"
+    link: /projects
+  - name: "Blog"
+    link: /blog
+  - name: "Resume"
+    link: /resume
