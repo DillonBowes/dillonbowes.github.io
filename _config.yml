@@ -1,7 +1,7 @@
 title: "Dillon Bowes"
 author: "Dillon Bowes"
 description: "Portfolio and Blog"
-remote_theme: pages-themes/slate@v0.2.0
+theme: slate
 plugins:
   - jekyll-remote-theme
 
