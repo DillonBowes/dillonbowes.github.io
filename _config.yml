@@ -2,8 +2,6 @@ title: "Dillon Bowes"
 author: "Dillon Bowes"
 description: "Portfolio and Blog"
 theme: slate
-plugins:
-  - jekyll-remote-theme
 
 # Navigation bar
 nav:
