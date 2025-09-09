@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 <div style="color: #ddd;">
 # Hi, I’m Dillon 👋
 Welcome to my portfolio site!
