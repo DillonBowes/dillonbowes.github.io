@@ -6,11 +6,50 @@
     <title>{{ page.title }} | {{ site.title }}</title>
     <link
       rel="stylesheet"
-      href="{{ '/assets/css/style.css' | relative_url }}"
+      href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
     />
   </head>
   <body>
-    {% include nav.html %}
-    <main>{{ content }}</main>
+    <!-- Navigation bar -->
+    <nav style="text-align: right; margin: 20px; font-size: 18px">
+      <a href="/" style="margin-left: 20px; color: #fff; text-decoration: none"
+        >Home</a
+      >
+      <a
+        href="/projects"
+        style="margin-left: 20px; color: #fff; text-decoration: none"
+        >Projects</a
+      >
+      <a
+        href="/blog"
+        style="margin-left: 20px; color: #fff; text-decoration: none"
+        >Blog</a
+      >
+      <a
+        href="/resume"
+        style="margin-left: 20px; color: #fff; text-decoration: none"
+        >Resume</a
+      >
+    </nav>
+
+    <!-- Main content -->
+    <main
+      style="
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px;
+        color: #ddd;
+        line-height: 1.6;
+      "
+    >
+      {{ content }}
+    </main>
+
+    <!-- Footer -->
+    <footer
+      style="text-align: center; padding: 20px; font-size: 14px; color: #888"
+    >
+      © {{ site.time | date: "%Y" }} Dillon Bowes — Powered by GitHub Pages
+    </footer>
   </body>
 </html>
