@@ -142,24 +142,18 @@ footer {
 
 /* Home page overlay */
 /* Home page overlay */
+/* Home page overlay */
 .home-overlay {
-    min-height: 100vh;               /* full viewport height */
+    min-height: 100vh;                 /* full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center;         /* vertical center */
-    align-items: center;             /* horizontal center */
+    justify-content: center;           /* vertical center */
+    align-items: center;               /* horizontal center */
     padding: 60px;
     text-align: center;
     color: #ddd;
-    box-sizing: border-box;
-
-    /* Background settings */
-    background-image: url('/assets/images/home_collage.png');
-    background-size: cover;          /* ensures image covers entire overlay */
-    background-position: center;     /* centers image */
-    background-repeat: no-repeat;
-    background-color: #111;          /* fallback if image doesn't load */
-    background-blend-mode: overlay;  /* lets the gradient blend with image */
+    
+    background: url('/assets/images/home_collage.png') center center / cover no-repeat;
 }
 
 /* Resume page overlay */
@@ -172,14 +166,6 @@ footer {
     padding: 60px;
     text-align: center;
     color: #ddd;
-    box-sizing: border-box;
 
-    /* Background settings */
-    background-image: url('/assets/images/resume-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #111;
-    background-blend-mode: overlay;
+    background: url('/assets/images/resume-bg.png') center center / cover no-repeat;
 }
-
