@@ -1,15 +1,6 @@
 title: "Dillon Bowes"
 author: "Dillon Bowes"
 description: "Portfolio and Blog"
-theme: slate
-
-# Navigation bar
-nav:
-  - name: "Home"
-    link: /
-  - name: "Projects"
-    link: /projects
-  - name: "Blog"
-    link: /blog
-  - name: "Resume"
-    link: /resume
+# completely remove theme or remote_theme
+# theme: slate
+# remote_theme: pages-themes/slate@v0.2.0
