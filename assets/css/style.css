@@ -143,14 +143,27 @@ footer {
 /* Home page overlay */
 .home-overlay {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/home_collage.png') center/cover no-repeat;
+    min-height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 60px;
-    border-radius: 12px;
     text-align: center;
+    color: #ddd; /* ensures text is visible */
 }
 
+
+/* Resume page overlay */
 .resume-overlay {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/images/resume-bg.png') center/cover no-repeat;
-    padding: 60px;
-    border-radius: 12px;
+    min-height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
     text-align: center;
+    padding: 60px;
+    color: #ddd; /* ensures text is visible */
+    box-sizing: border-box;
 }
