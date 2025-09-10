@@ -141,31 +141,45 @@ footer {
 }
 
 /* Home page overlay */
+/* Home page overlay */
 .home-overlay {
-    width: 20vw;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/home_collage.png') center/cover no-repeat;
-    min-height: 100vh; /* full viewport height */
+    min-height: 100vh;               /* full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;         /* vertical center */
+    align-items: center;             /* horizontal center */
+    padding: 60px;
+    text-align: center;
+    color: #ddd;
+    box-sizing: border-box;
+
+    /* Background settings */
+    background-image: url('/assets/images/home_collage.png');
+    background-size: cover;          /* ensures image covers entire overlay */
+    background-position: center;     /* centers image */
+    background-repeat: no-repeat;
+    background-color: #111;          /* fallback if image doesn't load */
+    background-blend-mode: overlay;  /* lets the gradient blend with image */
+}
+
+/* Resume page overlay */
+.resume-overlay {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 60px;
     text-align: center;
-    color: #ddd; /* ensures text is visible */
+    color: #ddd;
+    box-sizing: border-box;
+
+    /* Background settings */
+    background-image: url('/assets/images/resume-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #111;
+    background-blend-mode: overlay;
 }
 
-
-/* Resume page overlay */
-.resume-overlay {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/images/resume-bg.png') center/cover no-repeat;
-    width: 20vw;
-    min-height: 100vh; /* full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* vertical centering */
-    align-items: center;     /* horizontal centering */
-    text-align: center;
-    padding: 60px;
-    color: #ddd; /* ensures text is visible */
-
-}
