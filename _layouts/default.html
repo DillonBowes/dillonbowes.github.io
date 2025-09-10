@@ -4,54 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }} | {{ site.title }}</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
     />
+    <style>
+      body {
+        background-color: #111;
+        color: #ddd;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #ddd;
+      }
+      p,
+      li {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        line-height: 1.6;
+      }
+      h2::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        background-color: #0af;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        border-radius: 2px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.2s;
+      }
+      a:hover {
+        color: #0af;
+      }
+      nav a {
+        margin-left: 20px;
+      }
+      main {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 50px;
+        background-color: rgba(20, 20, 20, 0.85);
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      footer {
+        text-align: center;
+        padding: 25px;
+        font-size: 14px;
+        color: #888;
+        border-top: 1px solid #333;
+      }
+    </style>
   </head>
-  <body
-    style="
-      background-color: #111;
-      color: #ddd;
-      margin: 0;
-      font-family: sans-serif;
-    "
-  >
-    >
+  <body>
     <!-- Navigation bar -->
     <nav style="text-align: right; margin: 20px; font-size: 18px">
-      <a href="/" style="margin-left: 20px; color: #fff; text-decoration: none"
-        >Home</a
-      >
-      <a
-        href="/projects"
-        style="margin-left: 20px; color: #fff; text-decoration: none"
-        >Projects</a
-      >
-      <a
-        href="/blog"
-        style="margin-left: 20px; color: #fff; text-decoration: none"
-        >Blog</a
-      >
-      <a
-        href="/resume"
-        style="margin-left: 20px; color: #fff; text-decoration: none"
-        >Resume</a
-      >
+      <a href="/">Home</a>
+      <a href="/projects">Projects</a>
+      <a href="/blog">Blog</a>
+      <a href="/resume">Resume</a>
     </nav>
 
     <!-- Main content -->
-    <main
-      style="max-width: 800px; margin: 0 auto; padding: 40px; line-height: 1.6"
-    >
-      {{ content }}
-    </main>
+    <main>{{ content }}</main>
 
     <!-- Footer -->
-    <footer
-      style="text-align: center; padding: 20px; font-size: 14px; color: #888"
-    >
-      © {{ site.time | date: "%Y" }} Dillon Bowes
-    </footer>
+    <footer>© {{ site.time | date: "%Y" }} Dillon Bowes</footer>
   </body>
 </html>
