@@ -114,3 +114,23 @@ nav a:hover {
     max-height: 90%;
     overflow-y: auto;
 }
+
+.pdf-download {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.pdf-download a {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #f39c12;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.pdf-download a:hover {
+  background: #d35400;
+}
