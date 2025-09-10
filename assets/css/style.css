@@ -19,26 +19,13 @@ a:hover {
 
 /* Navigation Bar */
 nav {
-    background-color: #000;   /* solid black (can change to #111 or another color) */
-    padding: 15px 30px;
-    position: fixed;          /* stay at top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;            /* ensures it sits above overlays */
     text-align: right;
+    margin: 20px;
     font-size: 18px;
 }
 
 nav a {
     margin-left: 20px;
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-nav a:hover {
-    color: #0af;
 }
 
 /* Main content container */
@@ -49,7 +36,6 @@ main {
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     line-height: 1.6;
-    margin-top: 80px;
 }
 
 /* Headings */
@@ -155,38 +141,21 @@ footer {
 }
 
 /* Home page overlay */
-/* Fullscreen home overlay */
 .home-overlay {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+    height: 100vh;                       /* full viewport height */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;              /* horizontal center */
+    align-items: center;                  /* vertical center */
     background: url('/assets/images/home_collage.png') center center / cover no-repeat;
-    text-align: center;
-    box-sizing: border-box;
 }
 
-/* Fullscreen resume overlay */
-.resume-overlay {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('/assets/images/resume-bg.png') center center / cover no-repeat;
+.home-overlay .content-box {
+    background-color: rgba(0, 0, 0, 0.85); /* black with slight transparency */
+    color: #fff;                            /* white text */
+    padding: 40;
+    max-width: 700px;
+    border-radius: 12px;
     text-align: center;
-    box-sizing: border-box;
-}
-
-/* Overlay text box (keeps your border background) */
-.home-overlay .content-box,
-.resume-overlay h1,
-.resume-overlay p {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px 30px;
-    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
