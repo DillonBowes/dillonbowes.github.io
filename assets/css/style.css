@@ -155,31 +155,38 @@ footer {
 }
 
 /* Home page overlay */
+/* Fullscreen home overlay */
 .home-overlay {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('{{ "/assets/images/home_collage.png" | relative_url }}') center center / cover no-repeat;
+    background: url('/assets/images/home_collage.png') center center / cover no-repeat;
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* Fullscreen resume overlay */
 .resume-overlay {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('{{ "/assets/images/resume-bg.png" | relative_url }}') center center / cover no-repeat;
+    background: url('/assets/images/resume-bg.png') center center / cover no-repeat;
     text-align: center;
+    box-sizing: border-box;
 }
 
-/* Make overlays break out of main’s 900px box */
-main .home-overlay,
-main .resume-overlay {
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    max-width: none;
-    box-shadow: none;
-    border-radius: 0;
+/* Overlay text box (keeps your border background) */
+.home-overlay .content-box,
+.resume-overlay h1,
+.resume-overlay p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+    border-radius: 8px;
 }
+
