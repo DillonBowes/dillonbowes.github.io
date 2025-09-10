@@ -152,7 +152,6 @@ footer {
     padding: 60px;
     text-align: center;
     color: #ddd; /* ensures text is visible */
-    box-sizing: border-box;
 }
 
 
@@ -168,5 +167,5 @@ footer {
     text-align: center;
     padding: 60px;
     color: #ddd; /* ensures text is visible */
-    box-sizing: border-box;
+
 }
