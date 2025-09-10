@@ -44,7 +44,7 @@ nav a:hover {
 
 /* Centered Text Box */
 .text-box {
-    background: rgba(40,40,40,0.85);
+    background: rgba(40,40,40,0.9);
     padding: 40px;
     border-radius: 20px;
     text-align: center;
@@ -112,7 +112,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(44, 44, 44, 0.8);
+    background: rgba(44,44,44,0.9);
     border-radius: 15px;
     padding: 40px;
     text-align: center;
@@ -174,16 +174,31 @@ nav a:hover {
   background: rgb(2, 113, 107);
 }
 
-/* Resume Page */
-.resume-container {
-  max-width: 700px;
-  margin: 100px auto;
-  padding: 40px;
-  background: #2c2c2c;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+/* Background wrapper */
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px; /* more space at top and bottom */
+    display: flex;
+    justify-content: center;
+    /* remove align-items to prevent vertical centering */
 }
+
+/* Resume container */
+.resume-container {
+    max-width: 650px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(44,44,44,0.85); /* add transparency */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); /* lighter shadow */
+    margin-top: 50px;
+    
+}
+
+
+
 
 .resume-container h1 {
   margin-bottom: 20px;
@@ -220,7 +235,7 @@ nav a:hover {
   border: 2px solid #444;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.9);
 }
 
 

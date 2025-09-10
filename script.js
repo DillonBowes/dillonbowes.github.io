@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.project-icon').forEach(icon => {
         icon.addEventListener('click', () => {
             modal.style.display = 'flex';
-            modalContent.innerHTML = `<h2>${icon.dataset.title}</h2><p>Project content goes here. You can include images, graphs, or LaTeX here.</p>`;
+            modalContent.innerHTML = `<h2>${icon.dataset.title}</h2><p>anything and everything goes</p>`;
         });
     });
 
