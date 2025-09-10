@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    background-color: #111;
+    color: #ddd;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Links */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0af;
+}
+
+/* Navigation Bar */
+nav {
+    text-align: right;
+    margin: 20px;
+    font-size: 18px;
+}
+
+nav a {
+    margin-left: 20px;
+}
+
+/* Main content container */
+main {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #0af;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+/* Paragraphs and list items */
+p, li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #333;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-box {
+    background-color: rgba(20, 20, 20, 0.85);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.project-box img {
+    width: 80px;
+    height: 80px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.project-box:hover img {
+    filter: grayscale(0%);
+}
+
+/* Blog Styles */
+.blog-container {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.blog-post {
+    margin-bottom: 15px;
+}
+
+.blog-title {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: 6px;
+}
+
+.blog-content {
+    display: none;
+    padding: 10px;
+    background-color: rgba(25, 25, 25, 0.8);
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.blog-content.open {
+    display: block;
+}
+
+/* Home page overlay */
+.home-overlay {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    padding: 60px;
+    border-radius: 12px;
+    text-align: center;
+}

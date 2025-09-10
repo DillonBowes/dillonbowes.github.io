@@ -1,6 +1,15 @@
 title: "Dillon Bowes"
 author: "Dillon Bowes"
 description: "Portfolio and Blog"
-# completely remove theme or remote_theme
-# theme: slate
-# remote_theme: pages-themes/slate@v0.2.0
+# No theme or remote_theme so local layout works
+
+# Optional: navigation for site generation
+nav:
+  - name: "Home"
+    link: /
+  - name: "Projects"
+    link: /projects
+  - name: "Blog"
+    link: /blog
+  - name: "Resume"
+    link: /resume

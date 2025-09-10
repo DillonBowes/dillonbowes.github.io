@@ -1,5 +1,9 @@
-# Resume
+---
+layout: default
+title: Resume
+---
 
-[Download PDF](assets/Dillon_Bowes_Resume.pdf)
-
-<iframe src="assets/Dillon_Bowes_Resume.pdf" width="100%" height="600px"></iframe>
+<div class="home-overlay" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/images/resume-bg.png') center/cover no-repeat;">
+  <h1>Resume</h1>
+  <p>Full resume content goes here...</p>
+</div>

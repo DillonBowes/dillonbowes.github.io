@@ -22,6 +22,28 @@
         margin: 0;
         font-family: "Inter", sans-serif;
       }
+      nav {
+        text-align: right;
+        margin: 20px;
+        font-size: 18px;
+      }
+      nav a {
+        margin-left: 20px;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.2s;
+      }
+      nav a:hover {
+        color: #0af;
+      }
+      main {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        line-height: 1.6;
+      }
       h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
@@ -31,12 +53,6 @@
         font-size: 2rem;
         margin-bottom: 15px;
         color: #ddd;
-      }
-      p,
-      li {
-        font-size: 1.1rem;
-        margin-bottom: 15px;
-        line-height: 1.6;
       }
       h2::after {
         content: "";
@@ -48,24 +64,10 @@
         margin-bottom: 20px;
         border-radius: 2px;
       }
-      a {
-        color: #fff;
-        text-decoration: none;
-        transition: 0.2s;
-      }
-      a:hover {
-        color: #0af;
-      }
-      nav a {
-        margin-left: 20px;
-      }
-      main {
-        max-width: 900px;
-        margin: 60px auto;
-        padding: 50px;
-        background-color: rgba(20, 20, 20, 0.85);
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      p,
+      li {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
       }
       footer {
         text-align: center;
@@ -78,12 +80,7 @@
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav style="text-align: right; margin: 20px; font-size: 18px">
-      <a href="/">Home</a>
-      <a href="/projects">Projects</a>
-      <a href="/blog">Blog</a>
-      <a href="/resume">Resume</a>
-    </nav>
+    {% include nav.html %}
 
     <!-- Main content -->
     <main>{{ content }}</main>
