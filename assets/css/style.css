@@ -142,13 +142,31 @@ footer {
 
 /* Home page overlay */
 .home-overlay {
-    height: 100vh;                       /* full viewport height */
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/images/home_collage.png') center/cover no-repeat;
+    min-height: 100vh; /* full viewport height */
     display: flex;
-    justify-content: center;              /* horizontal center */
-    align-items: center;                  /* vertical center */
-    background: url('/assets/images/home_collage.png') center center / cover no-repeat;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+    color: #ddd; /* ensures text is visible */
+    box-sizing: border-box;
 }
 
-.home-overlay .content-box {
-    background-color: rgba(0, 0, 0, 0.85); /* black with slight transparency */
 
+/* Resume page overlay */
+.resume-overlay {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/images/resume-bg.png') center/cover no-repeat;
+    width: 100vw;
+    min-height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    text-align: center;
+    padding: 60px;
+    color: #ddd; /* ensures text is visible */
+    box-sizing: border-box;
+}
