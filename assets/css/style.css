@@ -151,11 +151,4 @@ footer {
 
 .home-overlay .content-box {
     background-color: rgba(0, 0, 0, 0.85); /* black with slight transparency */
-    color: #fff;                            /* white text */
-    padding: 40;
-    max-width: 700px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-}
 
