@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div style="color: #ddd;">
+<div style="color: #000000ff;">
 # Hi, I’m Dillon 👋
 Welcome to my portfolio site!
 
