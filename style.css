@@ -18,7 +18,7 @@ nav {
     padding: 20px 40px;
     position: sticky;
     top: 0;
-    background: rgba(28,28,28,0.95);
+    background: #1c1c1c;
     z-index: 100;
 }
 
@@ -29,7 +29,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #f39c12;
+    color: rgb(2, 113, 107);
 }
 
 /* Page Backgrounds */
@@ -66,27 +66,65 @@ nav a:hover {
     font-weight: bold;
 }
 
+.blog-post-content p:first-child {
+    margin-top: -15px;
+}
+
 .blog-post-content {
     padding: 20px;
     display: block;
 }
 
-/* Project Icons */
+.blog-post-content p {
+    line-height: 1.5; /* default is often 1.5, bigger number = more spacing */
+}
+
+
+/* Blog links */
+.blog-post-content a {
+    color: rgb(2, 113, 107); /* nice blue color */
+    text-decoration: underline; /* optional, makes it look like a link */
+    transition: color 0.3s;
+}
+
+.blog-post-content a:hover {
+    color: rgb(2, 90, 85); /* darker blue on hover */
+}
+
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* always 2 columns */
+    grid-auto-rows: 1fr;                   /* rows grow equally */
     gap: 30px;
-    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    min-height: 100vh; /* ensures the background fills the screen */
 }
 
 .project-icon {
-    background: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(44, 44, 44, 0.8);
     border-radius: 15px;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
-    transition: all 0.3s;
-    cursor: pointer;
 }
+
+
+.project-icon img {
+    width: 400px; /* can increase if needed */
+    height: auto;
+    margin-bottom: 15px;
+}
+
 
 .project-icon:hover {
     background: #444;
@@ -124,7 +162,7 @@ nav a:hover {
 .pdf-download a {
   display: inline-block;
   padding: 12px 20px;
-  background: #f39c12;
+  background:rgb(2, 113, 107);
   color: #fff;
   border-radius: 8px;
   font-weight: bold;
@@ -133,7 +171,7 @@ nav a:hover {
 }
 
 .pdf-download a:hover {
-  background: #d35400;
+  background: rgb(2, 113, 107);
 }
 
 /* Resume Page */
@@ -149,7 +187,7 @@ nav a:hover {
 
 .resume-container h1 {
   margin-bottom: 20px;
-  color: #f39c12;
+  color:rgb(2, 113, 107);
 }
 
 .resume-buttons {
@@ -163,7 +201,7 @@ nav a:hover {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background: #f39c12;
+  background:rgb(2, 113, 107);
   color: #fff;
   font-weight: bold;
   border-radius: 8px;
@@ -172,7 +210,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background: #d35400;
+  background: rgb(1, 89, 85);
   transform: scale(1.05);
 }
 
@@ -184,3 +222,5 @@ nav a:hover {
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
+
+
