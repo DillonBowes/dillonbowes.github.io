@@ -91,6 +91,40 @@ nav a:hover {
     color: rgb(2, 90, 85); /* darker blue on hover */
 }
 
+/* Project */
+/* Download button inside project card */
+.project-icon {
+    position: relative; /* so the button can be positioned inside */
+}
+
+.download-corner {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgb(2, 113, 107);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.download-corner:hover {
+    background: rgb(1, 89, 85);
+}
+
+.modal-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.modal-content strong {
+  color: rgb(2, 113, 107);
+}
+
+
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* always 2 columns */

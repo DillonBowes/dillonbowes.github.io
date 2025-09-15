@@ -12,9 +12,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalContent = modal.querySelector('.modal-content');
 
     document.querySelectorAll('.project-icon').forEach(icon => {
-        icon.addEventListener('click', () => {
+        icon.addEventListener('click', (e) => {
+            // Prevent clicking the download button from opening modal
+            if (e.target.classList.contains('download-corner')) return;
+
             modal.style.display = 'flex';
-            modalContent.innerHTML = `<h2>${icon.dataset.title}</h2><p>anything and everything goes</p>`;
+
+            const title = icon.dataset.title;
+            const description = icon.dataset.description || "No details available yet.";
+
+            modalContent.innerHTML = `
+                <h2>${title}</h2>
+                <p>${description}</p>
+            `;
         });
     });
 
@@ -22,3 +32,4 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === modal) modal.style.display = 'none';
     });
 });
+
