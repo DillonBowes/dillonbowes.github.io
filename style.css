@@ -1,10 +1,12 @@
 /* Global Styles */
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #1c1c1c;
-    color: #fff;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: url("assets/IMG_6892.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
 }
+
 
 a {
     text-decoration: none;
@@ -29,14 +31,12 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(2, 113, 107);
+    color: rgb(50, 66, 80);
 }
 
 /* Page Backgrounds */
 .bg-image {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,13 +82,13 @@ nav a:hover {
 
 /* Blog links */
 .blog-post-content a {
-    color: rgb(2, 113, 107); /* nice blue color */
+    color: rgb(63, 83, 101); /* nice blue color */
     text-decoration: underline; /* optional, makes it look like a link */
     transition: color 0.3s;
 }
 
 .blog-post-content a:hover {
-    color: rgb(2, 90, 85); /* darker blue on hover */
+    color: rgb(50, 66, 80); /* darker blue on hover */
 }
 
 /* Project */
@@ -101,7 +101,7 @@ nav a:hover {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: rgb(2, 113, 107);
+    background: rgb(63, 83, 101);
     color: #fff;
     padding: 6px 10px;
     border-radius: 6px;
@@ -112,7 +112,7 @@ nav a:hover {
 }
 
 .download-corner:hover {
-    background: rgb(1, 89, 85);
+    background: rgb(50, 66, 80);
 }
 
 .modal-content p {
@@ -120,7 +120,7 @@ nav a:hover {
   line-height: 1.6;
 }
 .modal-content strong {
-  color: rgb(2, 113, 107);
+  color: rgb(63, 83, 101);
 }
 
 
@@ -196,7 +196,7 @@ nav a:hover {
 .pdf-download a {
   display: inline-block;
   padding: 12px 20px;
-  background:rgb(2, 113, 107);
+  background:rgb(63, 83, 101);
   color: #fff;
   border-radius: 8px;
   font-weight: bold;
@@ -205,7 +205,7 @@ nav a:hover {
 }
 
 .pdf-download a:hover {
-  background: rgb(2, 113, 107);
+  background: rgb(50, 66, 80);
 }
 
 /* Background wrapper */
@@ -236,7 +236,7 @@ nav a:hover {
 
 .resume-container h1 {
   margin-bottom: 20px;
-  color:rgb(2, 113, 107);
+  color:rgb(63, 83, 101);
 }
 
 .resume-buttons {
@@ -250,7 +250,7 @@ nav a:hover {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background:rgb(2, 113, 107);
+  background:rgb(63, 83, 101);
   color: #fff;
   font-weight: bold;
   border-radius: 8px;
@@ -259,7 +259,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background: rgb(1, 89, 85);
+  background: rgb(50, 66, 80);
   transform: scale(1.05);
 }
 
@@ -273,3 +273,57 @@ nav a:hover {
 }
 
 
+/* Contact Form Section */
+.contact-section {
+  background: rgba(28,28,28,0.8); /* semi-transparent dark overlay so text is readable */
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.contact-section h2 {
+  color: rgb(63, 83, 101);
+  margin-bottom: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: stretch;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-section label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 5px;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.contact-section button {
+  padding: 12px;
+  background: rgb(63, 83, 101);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-section button:hover {
+  background: rgb(50, 66, 80);
+}

@@ -14,14 +14,36 @@
       <a href="projects.html">Projects</a>
     </nav>
 
-    <div
-      class="bg-image"
-      style="background-image: url('assets/background.png')"
-    >
+    <!-- MAIN Section -->
+    <div class="bg-image" style="background-image: url('assets/IMG_4884.jpg')">
       <div class="text-box">
         <h1>Dillon Bowes</h1>
         <p>Data science, financial modeling, and the like</p>
       </div>
     </div>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <form
+        action="mailto:dillon.bowes0@gmail.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <label>
+          Your Email:
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Subject:
+          <input type="text" name="subject" required />
+        </label>
+        <label>
+          Message:
+          <textarea name="body" rows="4" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </body>
 </html>
