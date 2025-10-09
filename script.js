@@ -1,24 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Blog Collapse
-    document.querySelectorAll('.blog-post').forEach(post => {
-        post.addEventListener('click', () => {
-            const content = post.querySelector('.blog-post-content');
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        });
-    });
+const projectIcons = document.querySelectorAll(".project-icon");
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
 
-    // Project Modal
-    const modal = document.querySelector('.modal');
-    const modalContent = modal.querySelector('.modal-content');
+projectIcons.forEach(icon => {
+  icon.addEventListener("click", () => {
+    const title = icon.getAttribute("data-title");
+    const desc = icon.getAttribute("data-description");
+    modalContent.innerHTML = `<h2>${title}</h2>${desc}`;
+    modal.style.display = "flex";
+  });
+});
 
-    document.querySelectorAll('.project-icon').forEach(icon => {
-        icon.addEventListener('click', () => {
-            modal.style.display = 'flex';
-            modalContent.innerHTML = `<h2>${icon.dataset.title}</h2><p>Project content goes here. You can include images, graphs, or LaTeX here.</p>`;
-        });
-    });
-
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) modal.style.display = 'none';
-    });
+modal.addEventListener("click", () => {
+  modal.style.display = "none";
 });
