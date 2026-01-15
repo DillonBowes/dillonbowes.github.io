@@ -327,3 +327,30 @@ nav a:hover {
 .contact-section button:hover {
   background: rgb(50, 66, 80);
 }
+
+.inline-download {
+  display: inline-block;
+  padding: 10px 16px;
+  background: rgb(63, 83, 101);
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.inline-download:hover {
+  background: rgb(50, 66, 80);
+  transform: translateY(-1px);
+}
+/* Hide modal-only download link inside project cards */
+.project-icon .inline-download {
+  display: none;
+}
+
+/* Show it once injected into the modal */
+.modal-content .inline-download {
+  display: inline-block;
+}
+
